@@ -1,0 +1,73 @@
+#portfolio
+  width: 80%
+  margin: 30px auto
+
+.portfolio-section-header
+  width: 100%
+  display: flex
+  flex-direction: column
+  justify-content: center
+  background-color: $portfolio-primary-color
+  border-radius: 3px
+
+#portfolio-section-slider
+  width: 75%
+  margin: 0 auto
+  display: flex
+  flex-direction: column
+  background-color: $background-alt-color
+  padding: 40px
+  border-radius: 3px
+
+.portfolio-card-container
+  display: flex
+  flex-direction: column
+  margin-bottom: 30px
+  border-radius: 3px
+  background-color: $background-color
+  &:last-child
+    margin-bottom: 0
+
+.portfolio-card-header
+  .portfolio-card-image
+    height: 200px
+    width: 100%
+    border-radius: 3px 3px 0 0
+    object-fit: cover
+
+.portfolio-card-body
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+
+.portfolio-card-content
+  width: 70%
+  padding: 20px
+  display: flex
+  flex-direction: column
+  justify-content: center
+
+.portfolio-card-title
+  font-family: $font-family-primary
+  padding: 10px 0
+
+.portfolio-card-sub-title
+  font-family: $font-family-primary
+  padding: 10px 0
+
+.portfolio-card-copy
+  padding: 10px 0
+
+.portfolio-divider
+  height: 200px
+  margin: auto
+  border: 1px solid $divider-color
+
+.portfolio-card-button-wrapper
+  width: 30%
+  padding: 20px
+  display: flex
+  flex-direction: column
+  justify-content: space-around
+  a
+    margin: 0 auto
