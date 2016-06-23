@@ -1,7 +1,13 @@
 $(function() {
+  hideSliders();
   aboutSlider();
   portfolioSlider();
 });
+
+//Function to hide all sliders
+function hideSliders() {
+  $('#about-section-slider, #portfolio-section-slider').hide();
+}
 
 //Function to open and close the about section slider
 function aboutSlider() {
@@ -16,7 +22,7 @@ function aboutSlider() {
   });
 }
 
-//Function to open and close the about section slider
+//Function to open and close the portfolio section slider
 function portfolioSlider() {
   $('#portfolio .section-title').click(function(e) {
     e.preventDefault();
