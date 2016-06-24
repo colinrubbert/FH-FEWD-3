@@ -71,3 +71,58 @@
   justify-content: space-around
   a
     margin: 0 auto
+
+// Media Queries
+@media screen and (max-width: $tablet-breakpoint)
+  // Portfolio Section
+  #portfolio
+    width: 100%
+
+  // Portfolio Section Slider
+  #portfolio-section-slider
+    width: 100%
+    background-color: $background-color
+    padding: 10px
+
+  .portfolio-card-container
+    background-color: $background-alt-color
+    &:last-child
+      margin-bottom: 0
+
+  .portfolio-card-header
+    .portfolio-card-image
+      height: 200px
+      width: 100%
+      border-radius: 3px 3px 0 0
+      object-fit: cover
+
+  .portfolio-card-body
+    flex-direction: column
+    justify-content: space-between
+
+  .portfolio-card-content
+    width: 100%
+    padding: 10px
+    flex-direction: column
+
+  .portfolio-card-title
+    font-size: 30px
+    line-height: 30px
+
+  .portfolio-card-sub-title
+    font-size: 20px
+    line-height: 20px
+
+  .portfolio-divider
+    height: 0
+    width: 200px
+    border-color: darken($divider-color, 10%)
+
+  .portfolio-card-button-wrapper
+    width: 100%
+    padding: 20px
+    display: flex
+    flex-direction: row
+    justify-content: space-around
+    a
+      margin: 0 auto

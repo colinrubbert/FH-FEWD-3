@@ -73,3 +73,11 @@
   transition: .2s ease-in-out
   &:hover
     color: $about-primary-color
+
+// Media Queries
+@media screen and (max-width: $tablet-breakpoint)
+  #navigation-container
+    display: none
+
+  #navigation-container.toggle
+    width: auto

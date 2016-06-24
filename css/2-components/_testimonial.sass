@@ -54,3 +54,29 @@
     height: 100%
     width: 100%
     justify-content: flex-end
+
+// Media Queries
+@media screen and (max-width: $tablet-breakpoint)
+  // Testimonial Section
+  #testimonial
+    width: 100%
+
+  // Testimonial Section Slider
+  #testimonial-section-slider
+    width: 100%
+    flex-direction: column
+    justify-content: center
+    background-color: $background-color
+    padding: 10px
+
+  .testimonial-wrapper
+    width: 100%
+    padding: 10px
+    background-color: $background-alt-color
+    &:last-child
+      background-color: $background-alt-color
+      padding: 0 20px
+
+  .testimonial-wrapper
+    .cta-wrapper
+      padding: 20px 10px

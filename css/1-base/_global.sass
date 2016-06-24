@@ -8,11 +8,10 @@
 #body-content-container
   position: absolute
   right: 0
-  width:80%
+  width: 80%
   padding: 60px
   display: flex
   flex-direction: column
-
 
 .section-title
   font-size: 48px
@@ -60,3 +59,35 @@
     transition: 0.25s ease-in-out
     &:hover
       color: $about-primary-color
+
+
+// Media Queries
+
+@media screen and (max-width: $tablet-breakpoint)
+  #site-container
+    width: 100%
+    display: flex
+    flex-direction: column
+
+  #body-content-container
+    position: absolute
+    right: 0
+    width: 100%
+    padding: 60px 20px
+    display: flex
+    flex-direction: column
+
+  .section-title
+    font-size: 36px
+    line-height: 36px
+    padding: 30px 50px
+
+@media screen and (max-width: $mobile-breakpoint)
+  .section-title
+    font-size: 30px
+    line-height: 30px
+    padding: 30px
+
+  .button
+    width: 100px
+    padding: 10px
