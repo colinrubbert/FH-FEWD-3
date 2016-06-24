@@ -62,6 +62,8 @@ em, .text-italic {
 }
 
 #body-content-container {
+  position: absolute;
+  right: 0;
   width: 80%;
   padding: 60px;
   display: flex;
@@ -110,14 +112,38 @@ em, .text-italic {
 }
 
 #navigation-container {
+  position: fixed;
+  left: 0;
   width: 20%;
-  height: 100vh;
+  height: 100%;
   padding: 60px 40px;
   font-family: "Montserrat", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   background-color: #e8ecf1;
+  transition: 0.25s ease-in-out;
+}
+
+#navigation-container.toggle {
+  width: 5%;
+  transition: 0.25s ease-in-out;
+}
+
+#navigation-container.toggle .navigation-brand-wrapper {
+  justify-content: center;
+}
+
+#navigation-container.toggle .navigation-brand-wrapper .navigation-logo {
+  display: none;
+}
+
+#navigation-container.toggle .navigation-brand-wrapper .navigation-menu-toggle {
+  margin: 0 auto;
+}
+
+#navigation-container.toggle .navigation-links-wrapper {
+  display: none;
 }
 
 .navigation-brand-wrapper {
@@ -146,10 +172,20 @@ em, .text-italic {
 
 .navigation-menu-toggle .menu {
   display: none;
+  cursor: pointer;
+}
+
+.navigation-menu-toggle .menu.toggle {
+  display: flex;
 }
 
 .navigation-menu-toggle .close {
   display: flex;
+  cursor: pointer;
+}
+
+.navigation-menu-toggle .close.toggle {
+  display: none;
 }
 
 .navigation-links-wrapper {

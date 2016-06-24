@@ -1,14 +1,29 @@
 // Navigation Styling Section
 
 #navigation-container
+  position: fixed
+  left: 0
   width: 20%
-  height: 100vh
+  height: 100%
   padding: 60px 40px
   font-family: $font-family-primary
   display: flex
   flex-direction: column
   justify-content: flex-start
   background-color: $background-alt-color
+  transition: 0.25s ease-in-out
+
+#navigation-container.toggle
+  width: 5%
+  transition: 0.25s ease-in-out
+  .navigation-brand-wrapper
+    justify-content: center
+    .navigation-logo
+      display: none
+    .navigation-menu-toggle
+      margin: 0 auto
+  .navigation-links-wrapper
+    display: none
 
 // Navigation Brand
 
@@ -28,8 +43,14 @@
     width: auto
   .menu
     display: none
+    cursor: pointer
+  .menu.toggle
+    display: flex
   .close
     display: flex
+    cursor: pointer
+  .close.toggle
+    display: none
 
 // Navigation Links
 
