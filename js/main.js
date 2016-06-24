@@ -1,5 +1,6 @@
 $(function() {
   hideSliders();
+  defaultMenuState();
   toggleMenu();
   aboutSlider();
   portfolioSlider();
@@ -9,6 +10,10 @@ $(function() {
 //Function to hide all sliders
 function hideSliders() {
   $('#about-section-slider, #portfolio-section-slider').hide();
+}
+
+function defaultMenuState() {
+  $('#navigation-container, .menu, .close').addClass('toggle');
 }
 
 // Function to open and close menu
