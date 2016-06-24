@@ -111,10 +111,29 @@ em, .text-italic {
   background-color: #1b8e39;
 }
 
+.cta-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.cta-wrapper .cta-link {
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+  text-decoration: none;
+  color: #e3667e;
+  transition: 0.25s ease-in-out;
+}
+
+.cta-wrapper .cta-link:hover {
+  color: #66a1e3;
+}
+
 #navigation-container {
   position: fixed;
   left: 0;
-  width: 20%;
+  width: 5%;
   height: 100%;
   padding: 60px 40px;
   font-family: "Montserrat", sans-serif;
@@ -123,19 +142,21 @@ em, .text-italic {
   justify-content: flex-start;
   background-color: #e8ecf1;
   transition: 0.25s ease-in-out;
+  z-index: 2;
 }
 
 #navigation-container.toggle {
-  width: 5%;
+  width: 20%;
+  height: 100%;
   transition: 0.25s ease-in-out;
 }
 
 #navigation-container.toggle .navigation-brand-wrapper {
-  justify-content: center;
+  justify-content: space-between;
 }
 
 #navigation-container.toggle .navigation-brand-wrapper .navigation-logo {
-  display: none;
+  display: flex;
 }
 
 #navigation-container.toggle .navigation-brand-wrapper .navigation-menu-toggle {
@@ -143,18 +164,20 @@ em, .text-italic {
 }
 
 #navigation-container.toggle .navigation-links-wrapper {
-  display: none;
+  display: flex;
 }
 
 .navigation-brand-wrapper {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   height: 80px;
 }
 
 .navigation-logo {
+  display: none;
   padding: 10px 0;
+  transition: 0.25s fade-in;
 }
 
 .navigation-logo img {
@@ -163,6 +186,7 @@ em, .text-italic {
 
 .navigation-menu-toggle {
   padding: 22px 0;
+  margin: 0 auto;
 }
 
 .navigation-menu-toggle img {
@@ -171,25 +195,25 @@ em, .text-italic {
 }
 
 .navigation-menu-toggle .menu {
-  display: none;
+  display: flex;
   cursor: pointer;
 }
 
 .navigation-menu-toggle .menu.toggle {
-  display: flex;
+  display: none;
 }
 
 .navigation-menu-toggle .close {
-  display: flex;
+  display: none;
   cursor: pointer;
 }
 
 .navigation-menu-toggle .close.toggle {
-  display: none;
+  display: flex;
 }
 
 .navigation-links-wrapper {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: space-around;
   margin-top: 20px;
@@ -350,5 +374,120 @@ em, .text-italic {
 }
 
 .portfolio-card-button-wrapper a {
+  margin: 0 auto;
+}
+
+#testimonial {
+  width: 80%;
+  margin: 30px auto;
+}
+
+.testimonial-section-header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #5bcd7e;
+  border-radius: 3px;
+}
+
+#testimonial-section-slider {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  background-color: #e8ecf1;
+  padding: 40px;
+  border-radius: 3px;
+}
+
+.testimonial-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: 10px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 3px;
+}
+
+.testimonial-wrapper:last-child {
+  background-color: #e8ecf1;
+  padding: 0 20px;
+}
+
+.testimonial-content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.testimonial-quote {
+  font-size: 18px;
+  line-height: 18px;
+  padding: 10px;
+}
+
+.testimonial-name {
+  font-size: 24px;
+  line-height: 24px;
+  padding: 20px 10px 10px 40px;
+  color: #5bcd7e;
+}
+
+.testimonial-wrapper .cta-wrapper {
+  height: 100%;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+#contact {
+  width: 80%;
+  margin: 30px auto;
+}
+
+.contact-section-header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #e0b334;
+  border-radius: 3px;
+}
+
+#contact-section-slider {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  background-color: #e8ecf1;
+  padding: 40px;
+  border-radius: 3px;
+}
+
+.contact-content-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+.contact-content-wrapper .contact-icon {
+  text-decoration: none;
+  transition: .25s ease-in-out;
+}
+
+.contact-content-wrapper .contact-icon:hover {
+  transform: scale(1.2);
+}
+
+.contact-content-wrapper .contact-image {
+  width: 60px;
+  height: 60px;
   margin: 0 auto;
 }

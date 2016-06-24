@@ -3,7 +3,7 @@
 #navigation-container
   position: fixed
   left: 0
-  width: 20%
+  width: 5%
   height: 100%
   padding: 60px 40px
   font-family: $font-family-primary
@@ -12,50 +12,55 @@
   justify-content: flex-start
   background-color: $background-alt-color
   transition: 0.25s ease-in-out
+  z-index: 2
 
 #navigation-container.toggle
-  width: 5%
+  width: 20%
+  height: 100%
   transition: 0.25s ease-in-out
   .navigation-brand-wrapper
-    justify-content: center
+    justify-content: space-between
     .navigation-logo
-      display: none
+      display: flex
     .navigation-menu-toggle
       margin: 0 auto
   .navigation-links-wrapper
-    display: none
+    display: flex
 
 // Navigation Brand
 
 .navigation-brand-wrapper
   display: flex
   flex-direction: row
-  justify-content: space-between
+  justify-content: center
   height: 80px
 .navigation-logo
+  display: none
   padding: 10px 0
+  transition: 0.25s fade-in
   img
     height: 60px
 .navigation-menu-toggle
   padding: 22px 0
+  margin: 0 auto
   img
     height: 36px
     width: auto
   .menu
-    display: none
+    display: flex
     cursor: pointer
   .menu.toggle
-    display: flex
+    display: none
   .close
-    display: flex
+    display: none
     cursor: pointer
   .close.toggle
-    display: none
+    display: flex
 
 // Navigation Links
 
 .navigation-links-wrapper
-  display: flex
+  display: none
   flex-direction: column
   justify-content: space-around
   margin-top: 20px
