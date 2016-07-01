@@ -76,6 +76,11 @@ function contactSlider() {
     e.preventDefault();
     $('#contact-section-slider').slideToggle(300);
   });
+
+  $('.cta-wrapper').click(function(e) {
+    e.preventDefault();
+    $('#contact-section-slider').slideToggle(300);
+  });
 }
 
 // Function to close the menu when clicked on navigation link or outside of navigation
