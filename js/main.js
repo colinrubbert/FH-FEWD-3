@@ -5,6 +5,7 @@ $(function() {
   portfolioSlider();
   testimonialSlider();
   contactSlider();
+  closeMenu();
 });
 
 
@@ -74,5 +75,12 @@ function contactSlider() {
   $('.contact-link').click(function(e) {
     e.preventDefault();
     $('#contact-section-slider').slideToggle(300);
+  });
+}
+
+// Function to close the menu when clicked on navigation link or outside of navigation
+function closeMenu() {
+  $('.navigation-link, #body-content-container').on('click', function(){
+    $('#navigation-container, .menu, .close').removeClass('toggle');
   });
 }

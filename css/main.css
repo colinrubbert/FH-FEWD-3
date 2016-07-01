@@ -271,20 +271,36 @@ em, .text-italic {
     padding: 10px 40px;
     font-family: "Montserrat", sans-serif;
   }
+  #navigation-container .navigation-brand-wrapper {
+    justify-content: space-around;
+  }
+  #navigation-container .navigation-brand-wrapper .navigation-menu-toggle {
+    margin: 0;
+  }
   #navigation-container.toggle {
     width: 100%;
     height: auto;
     margin: 0 auto;
   }
+  #navigation-container.toggle .navigation-brand-wrapper {
+    justify-content: space-around;
+  }
+  #navigation-container.toggle .navigation-brand-wrapper .navigation-menu-toggle {
+    margin: 0;
+  }
   .navigation-brand-wrapper {
     height: 80px;
   }
+  .navigation-logo {
+    display: flex;
+  }
   .navigation-menu-toggle {
     padding: 22px 0;
-    margin: 0 auto;
+    margin: 0;
   }
   .navigation-links-wrapper {
     margin: 20px auto;
+    text-align: center;
   }
 }
 
@@ -494,7 +510,7 @@ em, .text-italic {
   .portfolio-divider {
     height: 0;
     width: 200px;
-    border-color: #dadada;
+    border-color: #d9d9d9;
   }
   .portfolio-card-button-wrapper {
     width: 100%;
